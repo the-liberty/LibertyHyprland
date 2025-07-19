@@ -16,7 +16,7 @@ makepkg -si
 ```
 cd Documents
 
-git clone https://github.com/itRoy-pentest/RoyHyprland.git
+git clone https://github.com/the-liberty/LibertyHyprland.git
 ```
 
 # Step 4

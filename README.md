@@ -9,17 +9,15 @@ makepkg -si
 
 ```
 
-# Step 3
+# Step 2
 
 **Add repos**
 
 ```
-cd Documents
-
 git clone https://github.com/the-liberty/LibertyHyprland.git
 ```
 
-# Step 4
+# Step 3
 
 **Copy config**
 

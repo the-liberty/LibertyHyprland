@@ -6,16 +6,18 @@
 }
 
 window#waybar {
-  background: rgba(30, 30, 46, 0.95); /* Catppuccin Mocha */
-  border-bottom: 2px solid #89b4fa;
+  background-color: rgba(30, 30, 46, 0.4); /* przezroczystość */
+  backdrop-filter: blur(20px);             /* rozmycie tła */
+  border-bottom: 2px solid rgba(137, 180, 250, 0.6); /* lekki border */
   color: #cdd6f4;
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #pulseaudio, #network, #custom-power {
   padding: 0 10px;
-  background: #1e1e2e;
+  background-color: rgba(24, 24, 37, 0.6);
   border-radius: 8px;
   margin: 3px 4px;
+  backdrop-filter: blur(10px);
 }
 
 #hyprland-window {
@@ -32,12 +34,12 @@ window#waybar {
 }
 
 #hyprland-workspaces button.active {
-  background: #89b4fa;
+  background: rgba(137, 180, 250, 0.6);
   color: #1e1e2e;
 }
 
 #custom-power {
-  background: #f38ba8;
+  background-color: rgba(243, 139, 168, 0.8);
   color: #1e1e2e;
   font-weight: bold;
 }

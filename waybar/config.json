@@ -2,8 +2,10 @@
   "layer": "top",
   "position": "top",
   "height": 20,
-  "modules-left": ["custom/workspaces", "custom-app"],
-  "modules-center": [],
+  "spacing": 8,
+  
+  "modules-left": ["custom-app"],
+  "modules-center": ["custom/workspaces"],
   "modules-right": ["clock", "custom/power"],
 
   "custom/workspaces": {
@@ -19,20 +21,17 @@
     }
   },
 
-  "custom-app": {
-    "format": "",
-    "tooltip": false
+  "custom/app": {
+    "format": "App",
+    "on-click": "wofi --show drun"
   },
 
   "custom/power": {
     "format": "⏻",
-    "on-click": "systemctl poweroff",
-    "tooltip": false
+    "on-click": "wlogout"
   },
 
   "clock": {
-    "format": "{:%H:%M}",
-    "tooltip-format": "{:%A, %d %B %Y}",
-    "interval": 1
+    "format": " {:%H:%M}"
   }
 }

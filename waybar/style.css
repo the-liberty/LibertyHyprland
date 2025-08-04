@@ -1,74 +1,44 @@
 * {
-  font-family: "JetBrainsMono Nerd Font", "FontAwesome", sans-serif;
-  font-size: 14px;
-  border: none;
-  border-radius: 0;
-  min-height: 0;
-  padding: 0 10px;
-  color: #ffffff;
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 13px;
+  color: #eee;
 }
 
 window#waybar {
-  background: rgba(20, 20, 20, 0.95);
-  border-bottom: 2px solid #44475a;
-  padding: 0;
+  background: rgba(20, 20, 20, 0.3);
+  border: none;
+  box-shadow: none;
 }
 
-#clock,
-#cpu,
-#memory,
-#temperature,
-#battery,
-#pulseaudio,
-#network,
+#custom-app,
+#hyprland-workspaces button,
 #custom-power,
-#custom/power,
-#workspaces,
-#window {
-  background: transparent;
+#clock {
+  background: rgba(40, 40, 40, 0.7);
+  border-radius: 6px;
+  padding: 4px 12px;
+  margin: 0 6px;
+  min-width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+#hyprland-workspaces button {
   margin: 0 4px;
+  padding: 4px 10px;
 }
 
-#workspaces button {
-  background: #282a36;
-  color: #ffffff;
-  margin: 0 3px;
-  padding: 4px 8px;
-  border-radius: 5px;
-  transition: background 0.2s ease;
-}
-
-#workspaces button:hover {
-  background: #44475a;
-}
-
-#workspaces button.active {
-  background: #bd93f9;
-  color: #1e1e2e;
-}
-
-#workspaces button.urgent {
-  background: #ff5555;
-  color: #1e1e2e;
-}
-
-#battery.charging {
-  color: #50fa7b;
-}
-
-#battery.warning {
-  color: #ffb86c;
-}
-
-#battery.critical {
-  color: #ff5555;
-}
-
-#pulseaudio.muted {
-  color: #6272a4;
-}
-
-#custom/power {
-  color: #ff5555;
+#hyprland-workspaces button.active {
+  background: rgba(80, 250, 123, 0.9);
+  color: #282a36;
   font-weight: bold;
+}
+
+#custom-power:hover,
+#custom-app:hover,
+#clock:hover,
+#hyprland-workspaces button:hover {
+  background: rgba(80, 250, 123, 0.9);
+  color: #282a36;
 }

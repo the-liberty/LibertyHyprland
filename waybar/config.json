@@ -4,71 +4,28 @@
   "height": 30,
   "spacing": 8,
 
-  "modules-left": ["clock", "hyprland/window"],
+  "modules-left": ["custom/app"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": [
-    "cpu",
-    "memory",
-    "temperature",
-    "battery",
-    "pulseaudio",
-    "network",
-    "custom/power"
-  ],
+  "modules-right": ["custom/power", "clock"],
 
-  "clock": {
-    "format": " {:%A, %d %B}  {:%H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-  },
-
-  "hyprland/window": {
-    "format": "{}"
+  "custom/app": {
+    "format": "App",
+    "on-click": "wofi --show drun"
   },
 
   "hyprland/workspaces": {
-    "on-click": "activate",
     "format": "{name}",
     "disable-scroll": true,
-    "all-outputs": true,
-    "persistent-workspaces": [1, 2, 3, 4, 5]
-  },
-
-  "cpu": {
-    "format": " {usage}%",
-    "tooltip": false
-  },
-
-  "memory": {
-    "format": " {}%"
-  },
-
-  "temperature": {
-    "critical-threshold": 80,
-    "format": "🌡 {temperatureC}°C"
-  },
-
-  "battery": {
-    "format": "{capacity}% {icon}",
-    "format-charging": "⚡ {capacity}%",
-    "format-icons": ["", "", "", "", ""]
-  },
-
-  "pulseaudio": {
-    "format": "{volume}% {icon}",
-    "format-icons": {
-      "default": ["", "", ""]
-    },
-    "format-muted": "🔇"
-  },
-
-  "network": {
-    "format-wifi": " {essid}",
-    "format-ethernet": " {ipaddr}",
-    "format-disconnected": "⚠ Brak sieci"
+    "max-workspaces": 5,
+    "on-click": "activate"
   },
 
   "custom/power": {
     "format": "⏻",
     "on-click": "wlogout"
+  },
+
+  "clock": {
+    "format": " {:%H:%M}"
   }
 }

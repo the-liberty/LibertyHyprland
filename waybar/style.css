@@ -12,61 +12,33 @@ window#waybar {
   background-color: rgba(0, 0, 0, 0); /* przezroczysty pasek */
   border: none;
   min-height: 20px;
-  display: flex;
-  align-items: center;
-  padding: 0 8px;
 }
 
-/* WYSPA - kontener workspace'ów */
-#hyprland-workspaces {
-  background-color: rgba(40, 40, 40, 0.85);
-  border-radius: 8px;
-  padding: 2px 8px;
-  margin: 0 8px;
-  box-shadow: 0 0 8px rgba(80, 250, 123, 0.8); /* delikatna poświata */
-  display: flex;
-  gap: 6px; /* odstęp między przyciskami */
-}
-
-/* Przycisk workspace */
+#custom-app,
+#custom-power,
+#clock,
 #hyprland-workspaces button {
   background-color: rgba(40, 40, 40, 0.7);
   border-radius: 6px;
-  padding: 1px 6px;
+  padding: 1px 6px;  /* mniejszy padding, by zmieściło się w 20px */
   margin: 2px 4px;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
 }
 
-/* Aktywny workspace */
+#custom-power {
+  font-size: 20px; /* powiększona ikona zasilania */
+  color: #ff5555;
+}
+
 #hyprland-workspaces button.active {
   background-color: rgba(80, 250, 123, 0.9);
   color: #000000;
   font-weight: bold;
 }
 
-/* Hover na przyciskach i innych elementach */
 #custom-app:hover,
 #custom-power:hover,
 #clock:hover,
 #hyprland-workspaces button:hover {
   background-color: rgba(100, 255, 150, 0.9);
   color: #000000;
-}
-
-/* Inne elementy niestandardowe */
-#custom-app,
-#custom-power,
-#clock {
-  background-color: rgba(40, 40, 40, 0.7);
-  border-radius: 6px;
-  padding: 1px 6px;
-  margin: 2px 4px;
-}
-
-/* Ikona zasilania powiększona i czerwona */
-#custom-power {
-  font-size: 20px;
-  color: #ff5555;
 }

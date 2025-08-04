@@ -17,10 +17,15 @@ window#waybar {
 #custom-power,
 #clock,
 #hyprland-workspaces button {
-  background-color: rgba(40, 40, 40, 0.7); /* półprzezroczyste tło */
+  background-color: rgba(40, 40, 40, 0.7); /* półprzezroczyste wyspy */
   border-radius: 8px;
   padding: 4px 10px;
   margin: 4px 6px;
+}
+
+#custom-power {
+  font-size: 20px; /* powiększona ikona zasilania */
+  color: #ff5555;
 }
 
 #hyprland-workspaces button.active {

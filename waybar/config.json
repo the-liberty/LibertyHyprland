@@ -4,9 +4,9 @@
   "height": 20,
   "spacing": 8,
 
-  "modules-left": ["custom-app"],
+  "modules-left": ["custom/app"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["clock", "custom/power"],
+  "modules-right": ["clock", "battery", "custom/power"],
 
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -21,7 +21,7 @@
     }
   },
 
-  "custom-app": {
+  "custom/app": {
     "format": "App",
     "on-click": "wofi --show drun"
   },
@@ -33,5 +33,16 @@
 
   "clock": {
     "format": " {:%H:%M}"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": {
+      "charging": "",
+      "discharging": "",
+      "full": ""
+    },
+    "interval": 30,
+    "tooltip": false
   }
 }

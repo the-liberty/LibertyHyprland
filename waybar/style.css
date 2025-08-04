@@ -42,3 +42,19 @@ window#waybar {
   background-color: rgba(100, 255, 150, 0.9);
   color: #000000;
 }
+
+#battery {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #50fa7b;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 8px;
+  cursor: default;
+}
+
+#battery:hover {
+  color: #8be9fd;
+}
+

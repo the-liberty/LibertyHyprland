@@ -6,7 +6,7 @@
 
   "modules-left": ["custom/app"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["custom/power", "clock"],
+  "modules-right": ["clock", "custom/power"],
 
   "custom/app": {
     "format": "App",

@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  background-color: rgba(20, 20, 20, 0.3); /* przezroczysty pasek */
+  background-color: rgba(0, 0, 0, 0); /* 100% przezroczystości */
   border: none;
   min-height: 20px;
 }
@@ -18,20 +18,19 @@ window#waybar {
 #custom-power,
 #clock,
 #hyprland-workspaces button {
-  background-color: rgba(40, 40, 40, 0.7);
-  border-radius: 6px;
-  padding: 1px 6px;  /* mniejszy padding, by zmieściło się w 20px */
+  background-color: rgba(0, 0, 0, 0); /* brak tła */
+  border-radius: 0;
+  padding: 1px 6px;
   margin: 2px 4px;
 }
 
 #custom-power {
-  font-size: 16px; /* powiększona ikona zasilania */
+  font-size: 20px;
   color: #ff5555;
 }
 
 #hyprland-workspaces button.active {
-  background-color: rgba(80, 250, 123, 0.9);
-  color: #000000;
+  color: #50fa7b;
   font-weight: bold;
 }
 
@@ -39,6 +38,6 @@ window#waybar {
 #custom-power:hover,
 #clock:hover,
 #hyprland-workspaces button:hover {
-  background-color: rgba(100, 255, 150, 0.9);
-  color: #000000;
+  background-color: rgba(0, 0, 0, 0); /* brak efektu hover */
+  color: #ffffff;
 }

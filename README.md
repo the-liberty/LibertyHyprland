@@ -1,12 +1,14 @@
 # Step 1
 ```
-sudo pacman -S wofi kitty git waybar ttf-font-awesome otf-font-awesome ttf-jetbrains-mono pavucontrol thunar nwg-look papirus-icon-theme fastfetch powerline-fonts ttf-font-awesome otf-font-awesome ttf-jetbrains-mono code ttf-dejavu blueman brightnessctl nwg-displays wlogout 
+sudo pacman -S wofi kitty git waybar ttf-font-awesome otf-font-awesome ttf-jetbrains-mono pavucontrol thunar nwg-look papirus-icon-theme fastfetch powerline-fonts ttf-font-awesome otf-font-awesome ttf-jetbrains-mono code ttf-dejavu blueman brightnessctl nwg-displays 
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
 cd
+
+sudo yay -Sy wlogout
 
 ```
 

@@ -3,12 +3,12 @@
   "position": "top",
   "height": 20,
   "spacing": 8,
-  
+
   "modules-left": ["custom-app"],
-  "modules-center": ["custom/workspaces"],
+  "modules-center": ["hyprland/workspaces"],
   "modules-right": ["clock", "custom/power"],
 
-  "custom/workspaces": {
+  "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {

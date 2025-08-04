@@ -1,6 +1,6 @@
 * {
   font-family: JetBrainsMono Nerd Font, monospace;
-  font-size: 13px;
+  font-size: 12px;
   color: #ffffff;
   border: none;
   box-shadow: none;
@@ -11,20 +11,21 @@
 window#waybar {
   background-color: rgba(20, 20, 20, 0.3); /* przezroczysty pasek */
   border: none;
+  min-height: 20px;
 }
 
 #custom-app,
 #custom-power,
 #clock,
 #hyprland-workspaces button {
-  background-color: rgba(40, 40, 40, 0.7); /* półprzezroczyste wyspy */
-  border-radius: 8px;
-  padding: 4px 10px;
-  margin: 4px 6px;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 6px;
+  padding: 1px 6px;  /* mniejszy padding, by zmieściło się w 20px */
+  margin: 2px 4px;
 }
 
 #custom-power {
-  font-size: 22px; /* powiększona ikona zasilania */
+  font-size: 16px; /* powiększona ikona zasilania */
   color: #ff5555;
 }
 
@@ -40,9 +41,4 @@ window#waybar {
 #hyprland-workspaces button:hover {
   background-color: rgba(100, 255, 150, 0.9);
   color: #000000;
-  transition: background-color 0.2s ease;
-}
-
-#hyprland-workspaces {
-  margin: 0 6px;
 }

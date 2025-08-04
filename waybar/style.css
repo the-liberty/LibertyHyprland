@@ -1,44 +1,43 @@
 * {
   font-family: JetBrainsMono Nerd Font, monospace;
   font-size: 13px;
-  color: #eee;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
 window#waybar {
-  background: rgba(20, 20, 20, 0.3);
+  background-color: rgba(20, 20, 20, 0.3); /* przezroczysty pasek */
   border: none;
-  box-shadow: none;
 }
 
 #custom-app,
-#hyprland-workspaces button,
 #custom-power,
-#clock {
-  background: rgba(40, 40, 40, 0.7);
-  border-radius: 6px;
-  padding: 4px 12px;
-  margin: 0 6px;
-  min-width: fit-content;
-  cursor: pointer;
-  user-select: none;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
+#clock,
 #hyprland-workspaces button {
-  margin: 0 4px;
+  background-color: rgba(40, 40, 40, 0.7); /* półprzezroczyste tło */
+  border-radius: 8px;
   padding: 4px 10px;
+  margin: 4px 6px;
 }
 
 #hyprland-workspaces button.active {
-  background: rgba(80, 250, 123, 0.9);
-  color: #282a36;
+  background-color: rgba(80, 250, 123, 0.9);
+  color: #000000;
   font-weight: bold;
 }
 
-#custom-power:hover,
 #custom-app:hover,
+#custom-power:hover,
 #clock:hover,
 #hyprland-workspaces button:hover {
-  background: rgba(80, 250, 123, 0.9);
-  color: #282a36;
+  background-color: rgba(100, 255, 150, 0.9);
+  color: #000000;
+  transition: background-color 0.2s ease;
+}
+
+#hyprland-workspaces {
+  margin: 0 6px;
 }

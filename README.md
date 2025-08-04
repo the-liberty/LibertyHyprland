@@ -1,6 +1,6 @@
 # Step 1
 ```
-sudo pacman -S wofi kitty git waybar ttf-font-awesome otf-font-awesome ttf-jetbrains-mono pavucontrol thunar nwg-look papirus-icon-theme fastfetch powerline-fonts ttf-font-awesome otf-font-awesome ttf-jetbrains-mono code ttf-dejavu blueman brightnessctl nwg-display
+sudo pacman -S wofi kitty git waybar ttf-font-awesome otf-font-awesome ttf-jetbrains-mono pavucontrol thunar nwg-look papirus-icon-theme fastfetch powerline-fonts ttf-font-awesome otf-font-awesome ttf-jetbrains-mono code ttf-dejavu blueman brightnessctl nwg-displays wlogout 
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -33,6 +33,17 @@ git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 cd Graphite-gtk-theme
 sudo ./install.sh
 ```
+
+
+
+# Step 4
+
+**Remove App**
+
+```
+sudo pacman -Rns dolphin vim 
+```
+
 
 # Information
 

@@ -1,87 +1,78 @@
-/* --- Ogólny styl paska Waybar --- */
-window#waybar {
-  background-color: rgba(0, 0, 0, 0); /* przezroczyste tło */
-  font-family: "JetBrainsMono Nerd Font", monospace;
-  font-size: 14px;
-  color: #bbbbbb;
-  padding: 0 10px;
-  border-radius: 6px;
-  user-select: none;
-}
-
-/* --- Workspace'y --- */
-#hyprland-workspaces {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-#hyprland-workspaces button {
-  padding: 4px 10px;
-  margin: 2px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #888888;
-  font-weight: normal;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-#hyprland-workspaces button.active {
-  background-color: rgba(80, 250, 123, 0.2);
-  color: #50fa7b;
-  font-weight: bold;
-}
-
-#hyprland-workspaces button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+* {
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 13px;
   color: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* --- Custom App Button (lewy panel) --- */
-#custom-app {
-  padding: 0 12px;
-  cursor: pointer;
-  color: #8be9fd;
-  font-weight: 600;
-  user-select: none;
+window#waybar {
+  background-color: rgba(0, 0, 0, 0); /* przezroczysty pasek */
 }
 
-#custom-app:hover {
-  color: #50fa7b;
+#custom-app{ 
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 6px;
+  padding: 1px 6px;  
+  margin: 2px 4px;
+  font-size: 14px;
 }
 
-/* --- Clock --- */
+#custom-power,
+
 #clock {
-  color: #f1fa8c;
-  padding: 0 12px;
-  user-select: none;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 6px;
+  padding: 1px 6px;  
+  margin: 2px 4px;
+  font-size: 14px;
 }
 
-/* --- Custom Power Button (wylogowanie) --- */
+/*
+#hyprland-workspaces button {
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 6px;
+  padding: 1px 6px; 
+  margin: 2px 4px;
+}
+*/
+
 #custom-power {
-  padding: 0 12px;
-  cursor: pointer;
+  font-size: 20px; /* powiększona ikona zasilania */
   color: #ff5555;
-  user-select: none;
 }
 
-#custom-power:hover {
-  color: #ff4444;
-}
-
-/* --- Battery --- */
 #battery {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  background-color: rgba(40, 40, 40, 0.7);
+  padding: 1px 6px;  
+  margin: 2px 4px;
+  border-radius: 6px;
   color: #50fa7b;
   font-weight: bold;
   font-size: 14px;
-  padding: 0 12px;
-  cursor: default;
-  user-select: none;
+  padding: 0 8px;
 }
+
+/*
+#hyprland-workspaces button.active {
+  background-color: rgba(80, 250, 123, 0.9);
+  color: #000000;
+  font-weight: bold;
+}
+*/
+
+#custom-app:hover,
+#custom-power:hover,
+#clock:hover,
+
+/*
+#hyprland-workspaces button:hover {
+  background-color: rgba(100, 255, 150, 0.9);
+  color: #000000;
+}
+*/
 
 #battery:hover {
   color: #8be9fd;
